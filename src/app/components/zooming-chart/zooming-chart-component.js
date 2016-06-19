@@ -1,10 +1,12 @@
 function ZoomingChartController () {
   var vm = this;
-
-  vm.test = 'OK';
-
+  
+  this.state = {
+    isFocused: false
+  }
+  
   vm.toggleZoom = function () {
-    vm.isFocused = true;
+    vm.state.isFocused = !vm.state.isFocused;
 
     console.log('xoom');
   }
