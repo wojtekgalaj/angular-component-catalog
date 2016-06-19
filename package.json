@@ -1,0 +1,31 @@
+{
+  "name": "right-panel",
+  "version": "1.0.0",
+  "description": "Design pattern POC",
+  "main": "index.js",
+  "watch": {
+    "js": {
+      "patterns": "src/app/**/*",
+      "ignore": "src/app/built",
+      "extensions": "js"
+    }
+  },
+  "scripts": {
+    "serve": "browser-sync start --c bs-config.js",
+    "watch": "npm-watch & npm run css & npm run serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "js": "browserify src/app/main.js > src/app/built/bundle.js",
+    "css": "stylus -w src/app/styles/style.styl -o src/app/styles/"
+  },
+  "author": "Wojtek Galaj",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "npm-watch": "^0.1.4",
+    "stylus": "^0.54.5"
+  }
+}

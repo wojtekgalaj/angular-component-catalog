@@ -1,0 +1,13 @@
+<!doctype html>
+
+<head>
+    <title>Right panels</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body ng-app="app" >
+    <div class="map" ng-controller="MapCtrl as map">
+        <button ng-click="map.toggleRightPanel()">OPEN PANEL</button>
+        <right-panel is-open="map.state.rightPanelOpen"></right-panel>
+    </div>
+    <script src="built/bundle.js"></script>
+</body>

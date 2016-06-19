@@ -1,0 +1,24 @@
+.right-panel
+  position absolute
+  top 0
+  bottom 0
+  right 0
+  width 40%
+  min-width 600px
+  padding-left 20px
+  will-change transform
+  transition transform .30s ease
+  transform translateX(100%)
+  &.open
+    transform translateX(0)
+
+.right-panel__content
+  height 100% - 1px
+  border 4px solid white
+  background rgba(255,255,255,.3)
+
+.example-chart-holder
+  width 400px
+  height 250px
+  background yellow
+  color greenyellow
