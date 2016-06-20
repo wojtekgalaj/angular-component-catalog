@@ -1,5 +1,5 @@
 {
-  "name": "right-panel",
+  "name": "angular-component-router",
   "version": "1.0.0",
   "description": "Design pattern POC",
   "main": "index.js",
@@ -20,7 +20,8 @@
   "author": "Wojtek Galaj",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.7"
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1"
   },
   "devDependencies": {
     "browser-sync": "^2.13.0",

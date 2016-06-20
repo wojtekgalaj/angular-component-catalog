@@ -4,7 +4,7 @@ var angular = require('angular');
 var app = angular.module('app', [])
     .controller('MapCtrl', function () {
         var vm = this;
-    
+      
         vm.state = {
                 rightPanelOpen: false
         };
@@ -17,6 +17,10 @@ var app = angular.module('app', [])
 
     });
 
+// Sections
+require('./sections/landing/landing-section-controller')(app);
+
+// Components
 require('./components/right-panel/right-panel-component')(app);
 require('./components/zooming-chart/zooming-chart-component')(app);
 

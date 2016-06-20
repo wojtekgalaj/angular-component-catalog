@@ -1,7 +1,7 @@
 function RightPanelControler () {
   var that = this;
 
-  this.open = true;
+  this.open = false;
 
 }
 

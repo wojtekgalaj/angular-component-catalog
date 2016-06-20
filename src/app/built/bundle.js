@@ -31480,7 +31480,7 @@ module.exports = angular;
 function RightPanelControler () {
   var that = this;
 
-  this.open = true;
+  this.open = false;
 
 }
 
@@ -31494,6 +31494,7 @@ module.exports = function (app) {
     }
   })
 };
+
 },{}],4:[function(require,module,exports){
 function ZoomingChartController () {
   var vm = this;
@@ -31523,7 +31524,7 @@ var angular = require('angular');
 var app = angular.module('app', [])
     .controller('MapCtrl', function () {
         var vm = this;
-    
+      
         vm.state = {
                 rightPanelOpen: false
         };
@@ -31536,8 +31537,20 @@ var app = angular.module('app', [])
 
     });
 
+// Sections
+require('./sections/landing/landing-section-controller')(app);
+
+// Components
 require('./components/right-panel/right-panel-component')(app);
 require('./components/zooming-chart/zooming-chart-component')(app);
 
 
-},{"./components/right-panel/right-panel-component":3,"./components/zooming-chart/zooming-chart-component":4,"angular":2}]},{},[5]);
+},{"./components/right-panel/right-panel-component":3,"./components/zooming-chart/zooming-chart-component":4,"./sections/landing/landing-section-controller":6,"angular":2}],6:[function(require,module,exports){
+function LandingSectionController () {
+
+}
+
+module.exports = function (app) {
+  app.controller('LandingSectionController', LandingSectionController);
+};
+},{}]},{},[5]);
