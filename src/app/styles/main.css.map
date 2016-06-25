@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.css"
+	],
+	"sourcesContent": [
+		".right-panel {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  width: 40%;\n  min-width: 600px;\n  padding-left: 20px;\n  transition: transform .3s ease;\n  transform: translateX(100%); }\n  .right-panel.open {\n    transform: translateX(0); }\n\n.right-panel__content {\n  height: 100% -1px;\n  border: 4px solid white;\n  background: rgba(255, 255, 255, 0.3); }\n\n.example-chart-holder {\n  width: 400px;\n  height: 250px;\n  background: yellow;\n  color: greenyellow; }\n\n.zooming-chart {\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.3);\n  transform: background 3s ease; }\n  .zooming-chart.is-focused {\n    position: fixed;\n    top: 4px;\n    left: 25px;\n    background: rgba(121, 123, 109, 0.9); }\n  .zooming-chart h1 {\n    margin: auto; }\n\nbody {\n  background: red;\n  font-size: 25px;\n  font-family: sans-serif;\n  color: white; }\n\n.map {\n  border: 1px solid greenyellow;\n  background: #bada55;\n  position: fixed;\n  display: flex;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0; }\n  .map h1 {\n    margin: auto; }\n\n/*# sourceMappingURL=main.css.map */"
+	],
+	"mappings": "AAAA,AAAA,YAAY,CAAC;EACX,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,CAAE;EACP,MAAM,EAAE,CAAE;EACV,KAAK,EAAE,CAAE;EACT,KAAK,EAAE,GAAI;EACX,SAAS,EAAE,KAAM;EACjB,YAAY,EAAE,IAAK;EACnB,UAAU,EAAE,kBAAmB;EAC/B,SAAS,EAAE,gBAAU,GAAS;;AAC9B,AAAY,YAAA,AAAA,KAAK,CAAC;EAChB,SAAS,EAAE,aAAU,GAAM;;AAE/B,AAAA,qBAAqB,CAAC;EACpB,MAAM,EAAE,SAAU;EAClB,MAAM,EAAE,eAAgB;EACxB,UAAU,EAAE,wBAAI,GAAuB;;AAEzC,AAAA,qBAAqB,CAAC;EACpB,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,KAAM;EACd,UAAU,EAAE,MAAO;EACnB,KAAK,EAAE,WAAY,GAAG;;AAExB,AAAA,cAAc,CAAC;EACb,GAAG,EAAE,CAAE;EACP,IAAI,EAAE,CAAE;EACR,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK;EACb,UAAU,EAAE,kBAAI;EAChB,SAAS,EAAE,kBAAmB,GAAG;;AACjC,AAAc,cAAA,AAAA,WAAW,CAAC;EACxB,QAAQ,EAAE,KAAM;EAChB,GAAG,EAAE,GAAI;EACT,IAAI,EAAE,IAAK;EACX,UAAU,EAAE,wBAAI,GAAuB;;AACzC,AAAe,cAAD,CAAC,EAAE,CAAC;EAChB,MAAM,EAAE,IAAK,GAAG;;AAEpB,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,GAAI;EAChB,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,UAAW;EACxB,KAAK,EAAE,KAAM,GAAG;;AAElB,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,qBAAsB;EAC9B,UAAU,EAAE,OAAQ;EACpB,QAAQ,EAAE,KAAM;EAChB,OAAO,EAAE,IAAK;EACd,GAAG,EAAE,CAAE;EACP,KAAK,EAAE,CAAE;EACT,MAAM,EAAE,CAAE;EACV,IAAI,EAAE,CAAE,GAAG;;AACX,AAAK,IAAD,CAAC,EAAE,CAAC;EACN,MAAM,EAAE,IAAK,GAAG;;AAEpB,oCAAoC",
+	"names": []
+}
